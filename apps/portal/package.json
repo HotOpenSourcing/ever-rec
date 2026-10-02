@@ -11,9 +11,9 @@
   "license": "AGPL-3.0",
   "homepage": "https://rec.so",
   "scripts": {
-    "dev": "next dev --port 4200",
-    "build": "next build",
-    "start": "next start --port 4200",
+    "dev": "node init && next dev --port 4200",
+    "build": "node init && next build",
+    "start": "node init && next start --port 4200",
     "lint": "next lint"
   },
   "dependencies": {
