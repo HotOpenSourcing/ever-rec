@@ -31,10 +31,10 @@
   },
   "scripts": {
     "lint": "eslint",
-    "dev": "npm run watch",
+    "dev": "node init && npm run watch",
     "watch": "webpack --watch --config webpack.dev.js",
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 webpack --progress --mode production --config webpack.prod.js",
-    "build:prod": "cross-env NODE_OPTIONS=--max_old_space_size=8192 NODE_OPTIONS=--openssl-legacy-provider webpack --progress --mode production --config webpack.prod.js",
+    "build": "node init && cross-env NODE_OPTIONS=--max_old_space_size=8192 webpack --progress --mode production --config webpack.prod.js",
+    "build:prod": "node init && cross-env NODE_OPTIONS=--max_old_space_size=8192 NODE_OPTIONS=--openssl-legacy-provider webpack --progress --mode production --config webpack.prod.js",
     "zip:prod": "(cd ./build/prod && zip -r - *) > release/prod_$(echo $npm_package_version | sed 's/\\./_/g').zip",
     "zip:stg": "(cd ./build/stg && zip -r - *) > release/stg_$(echo $npm_package_version | sed 's/\\./_/g').zip",
     "zip:dev": "(cd ./build/dev && zip -r - *) > release/dev_$(echo $npm_package_version | sed 's/\\./_/g').zip",

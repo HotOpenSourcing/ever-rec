@@ -27,7 +27,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -53,7 +52,6 @@ dist/
 *.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -147,3 +145,4 @@ Thumbs.db
 /apps/portal/components/pagesComponents/_imagesScreen/pages/myVideos/VideoItem/VideoItem.module.css.map
 /apps/portal/components/pagesComponents/_imagesScreen/components/PermissionsModal/PermissionsModal.module.css
 /apps/portal/components/pagesComponents/_imagesScreen/components/PermissionsModal/PermissionsModal.module.css.map
+config.bat
